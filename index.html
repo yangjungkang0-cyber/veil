@@ -1,50 +1,238 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ko">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Veil</title>
-<style>
-*{margin:0;padding:0;box-sizing:border-box}
-body{
-font-family:system-ui,sans-serif;
-min-height:100vh;
-display:flex;
-align-items:center;
-justify-content:center;
-background:linear-gradient(135deg,#0f172a,#1e293b);
-color:white;
-}
-.container{
-max-width:800px;
-padding:40px;
-text-align:center;
-}
-h1{
-font-size:5rem;
-margin-bottom:1rem;
-}
-p{
-font-size:1.25rem;
-opacity:.85;
-margin-bottom:2rem;
-}
-.btn{
-display:inline-block;
-padding:14px 28px;
-border-radius:999px;
-background:white;
-color:#0f172a;
-text-decoration:none;
-font-weight:700;
-}
-</style>
-</head>
-<body>
-<div class="container">
-<h1>Veil</h1>
-<p>Build quietly. Ship boldly.</p>
-<a class="btn" href="#">Get Started</a>
-</div>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VEIL</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css?v=story-image-fit" />
+  </head>
+  <body>
+    <header class="site-header" aria-label="Primary">
+      <a class="logo" href="#" aria-label="VEIL home">
+        <img src="./assets/veil-logo.svg" alt="VEIL" />
+      </a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#shop">Shop</a>
+        <a href="#about">About</a>
+        <a href="#fragrance">Fragrance</a>
+        <a href="#shop">Gift</a>
+      </nav>
+      <nav class="utility-nav" aria-label="Account navigation">
+        <a href="#">Search</a>
+        <a href="#">Cart (0)</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero reveal-section" aria-label="Movement based Fragrance Experience">
+        <img src="./assets/hero.png" alt="" class="hero-image" />
+        <div class="hero-shade"></div>
+        <div class="hero-copy">
+          <h1>Movement based fragrance.<br />Wear the scent.</h1>
+          <p>
+            몸의 움직임과 체온,<br />
+            피부의 긴장감에서 영감을 받은<br />
+            퍼포먼스 프래그런스 컬렉션.
+          </p>
+          <a class="text-link light" href="#scents">
+            Discover <span></span><b aria-hidden="true">→</b>
+          </a>
+        </div>
+        <div class="scroll-cue" aria-hidden="true">
+          <span>Scroll</span>
+          <i></i>
+        </div>
+      </section>
+
+      <section class="news-bar reveal-section" aria-label="Collection transition">
+        <div class="news-labels">
+          <span>Collection 01</span>
+        </div>
+        <a class="text-link compact" href="#fragrance">
+          View Collection <span></span><b aria-hidden="true">→</b>
+        </a>
+      </section>
+
+      <section class="intro split-section reveal-section" id="about">
+        <div class="section-copy">
+          <div class="collection-kicker">
+            <span>Collection 01</span>
+          </div>
+          <h2>States of<br />movement.</h2>
+          <p>
+            움직임 이전의 긴장,<br />
+            움직임 속의 열기,<br />
+            그리고 이완 이후의 여운.<br /><br />
+            VEIL은 몸의 상태를 향으로 번역합니다.
+          </p>
+          <a class="text-link" href="#fragrance">
+            View Collection <span></span><b aria-hidden="true">→</b>
+          </a>
+        </div>
+        <img src="./assets/collection-fabric.png" alt="Translucent fabric over skin" />
+      </section>
+
+      <section class="products product-showcase reveal-section" id="fragrance" aria-label="Featured fragrances">
+        <div class="product-track" aria-label="Drag to explore fragrances">
+          <article class="product-slide product-flex" aria-label="Flex fragrance">
+            <div class="product-mood">
+              <img src="./assets/flex-mood.png" alt="" />
+              <span>01 / 03</span>
+            </div>
+            <div class="product-detail">
+              <div class="product-text">
+                <h2>Flex</h2>
+                <p class="tagline">Before movement.</p>
+              </div>
+              <img class="slide-bottle" src="./assets/flex-detail.png" alt="VEIL Flex perfume bottle" />
+              <div class="product-info">
+                <p class="scent-notes">Cold Musk · Metallic Skin · Pepper</p>
+                <p class="scent-state">The tension before motion.</p>
+                <a class="bag-button" href="#flex-detail">Add to bag</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-slide product-pulse" aria-label="Pulse fragrance">
+            <div class="product-mood">
+              <img src="./assets/pulse-mood.png" alt="" />
+              <span>02 / 03</span>
+            </div>
+            <div class="product-detail">
+              <div class="product-text">
+                <h2>Pulse</h2>
+                <p class="tagline">Heartbeat elevated.</p>
+              </div>
+              <img class="slide-bottle" src="./assets/pulse-detail.png" alt="VEIL Pulse perfume bottle" />
+              <div class="product-info">
+                <p class="scent-notes">Warm Skin · Amber · Soft Spice</p>
+                <p class="scent-state">The heat during motion.</p>
+                <a class="bag-button" href="#pulse-detail">Add to bag</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-slide product-drift" aria-label="Drift fragrance">
+            <div class="product-mood">
+              <img src="./assets/drift-mood.png" alt="" />
+              <span>03 / 03</span>
+            </div>
+            <div class="product-detail">
+              <div class="product-text">
+                <h2>Drift</h2>
+                <p class="tagline">The softness after release.</p>
+              </div>
+              <img class="slide-bottle" src="./assets/drift-detail.png" alt="VEIL Drift perfume bottle" />
+              <div class="product-info">
+                <p class="scent-notes">Airy Cotton · Transparent Musk · Pale Wood</p>
+                <p class="scent-state">A quiet state after movement.</p>
+                <a class="bag-button" href="#drift-detail">Add to bag</a>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="product-controls" aria-label="Fragrance carousel controls">
+          <button class="product-arrow" type="button" data-product-prev aria-label="Previous fragrance">‹</button>
+          <button class="product-arrow" type="button" data-product-next aria-label="Next fragrance">›</button>
+        </div>
+      </section>
+
+      <section class="philosophy split-section reveal-section" id="scents">
+        <div class="section-copy">
+          <h2>Our Story</h2>
+          <p>
+            VEIL은 향을 단순한 향기가 아닌,<br />
+            몸의 감각에 반응하는 텍스처로 정의합니다.<br /><br />
+            피부 위의 온도와 움직임,<br />
+            그리고 시간의 흐름에 따라<br />
+            향은 조용히 변화합니다.
+          </p>
+          <a class="text-link" href="#shop">
+            Learn More <span></span><b aria-hidden="true">→</b>
+          </a>
+        </div>
+        <img src="./assets/collection-packaging.png" alt="VEIL fragrances on translucent packaging paper" />
+      </section>
+
+      <section class="instagram reveal-section" aria-label="Instagram gallery">
+        <div class="instagram-head">
+          <h2>Instagram</h2>
+          <a href="#" aria-label="VEIL official Instagram">@veil.official</a>
+        </div>
+        <div class="gallery">
+          <img src="./assets/hero.png" alt="" />
+          <img src="./assets/movement.png" alt="" />
+          <img src="./assets/hero.png" alt="" />
+          <img src="./assets/movement.png" alt="" />
+          <img src="./assets/fabric.png" alt="" />
+          <img src="./assets/hero.png" alt="" />
+        </div>
+      </section>
+
+      <section class="newsletter reveal-section" aria-label="Newsletter signup">
+        <div>
+          <h2>Stay in rhythm<br />with VEIL</h2>
+          <p>새로운 스토리와 향의 경험을 가장 먼저 만나보세요.</p>
+        </div>
+        <form>
+          <label class="sr-only" for="email">Email</label>
+          <div class="email-row">
+            <input id="email" type="email" placeholder="Enter your email" />
+            <button type="submit">Subscribe</button>
+          </div>
+          <label class="agree">
+            <input type="checkbox" checked />
+            VEIL의 뉴스레터 수신 및 마케팅 활용에 동의합니다.
+          </label>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer" id="shop">
+      <div class="footer-brand"><img src="./assets/veil-logo.svg" alt="VEIL" /></div>
+      <div class="footer-columns">
+        <div>
+          <h3>About</h3>
+          <a href="#">Brand Philosophy</a>
+          <a href="#">Design Process</a>
+          <a href="#">Sustainability</a>
+        </div>
+        <div>
+          <h3>Fragrance</h3>
+          <a href="#">Fragrance Design</a>
+          <a href="#">Ingredients</a>
+          <a href="#">Scents</a>
+        </div>
+        <div>
+          <h3>Shop</h3>
+          <a href="#">All Products</a>
+          <a href="#">Gift Set</a>
+          <a href="#">Refill</a>
+        </div>
+        <div>
+          <h3>Customer</h3>
+          <a href="#">FAQ</a>
+          <a href="#">Contact</a>
+          <a href="#">Shipping & Returns</a>
+        </div>
+      </div>
+      <div class="social">
+        <a href="#">Instagram <b aria-hidden="true">↗</b></a>
+        <a href="#">Youtube <b aria-hidden="true">▶</b></a>
+      </div>
+      <div class="legal">
+        <span>© 2024 VEIL. All rights reserved.</span>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Use</a>
+      </div>
+      <a class="top-button" href="#" aria-label="Back to top">↑<span>Top</span></a>
+    </footer>
+    <script src="./script.js?v=story-image-fit"></script>
+  </body>
 </html>
