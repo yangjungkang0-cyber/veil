@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop | VEIL</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css?v=shop-3scents" />
+  </head>
+  <body class="subpage">
+    <header class="site-header subpage-header" aria-label="Primary">
+      <a class="logo" href="./index.html" aria-label="VEIL home">
+        <img src="./assets/veil-logo.svg" alt="VEIL" />
+      </a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="./shop.html">Shop</a>
+        <a href="./about.html">About</a>
+        <a href="./index.html#fragrance">Fragrance</a>
+        <a href="./shop.html#gifts">Gift</a>
+      </nav>
+      <nav class="utility-nav" aria-label="Account navigation">
+        <a href="#">Search</a>
+        <a href="#">Cart (0)</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="shop-hero reveal-section">
+        <div>
+          <p class="sub-kicker">Body Performance Lifestyle Fragrance</p>
+          <h1>Body states,<br />translated into scent.</h1>
+        </div>
+        <p>
+          FLEX, PULSE, DRIFT는 각각 긴장, 열감, 이완의 상태를 향과 소재감으로
+          표현합니다.
+        </p>
+      </section>
+
+      <section class="shop-grid reveal-section" aria-label="VEIL fragrance lineup">
+        <article class="shop-card flex-card">
+          <div class="shop-image"><img src="./assets/flex-detail.png" alt="VEIL Flex fragrance" /></div>
+          <div class="shop-meta">
+            <span>01 / Smoky Taupe</span>
+            <h2>Flex</h2>
+            <p>워밍업 직전의 긴장감. 차가운 머스크와 metallic skin.</p>
+            <a class="bag-button" href="#">Add to bag</a>
+          </div>
+        </article>
+        <article class="shop-card pulse-card">
+          <div class="shop-image"><img src="./assets/pulse-detail.png" alt="VEIL Pulse fragrance" /></div>
+          <div class="shop-meta">
+            <span>02 / Dusty Rose</span>
+            <h2>Pulse</h2>
+            <p>심박이 올라간 상태. warm skin과 amber의 압력감.</p>
+            <a class="bag-button" href="#">Add to bag</a>
+          </div>
+        </article>
+        <article class="shop-card drift-card">
+          <div class="shop-image"><img src="./assets/drift-detail.png" alt="VEIL Drift fragrance" /></div>
+          <div class="shop-meta">
+            <span>03 / Fog Lavender Grey</span>
+            <h2>Drift</h2>
+            <p>운동 후 이완 상태. airy cotton과 transparent musk.</p>
+            <a class="bag-button" href="#">Add to bag</a>
+          </div>
+        </article>
+      </section>
+
+      <section class="color-system reveal-section">
+        <div>
+          <p class="sub-kicker">Color System</p>
+          <h2>Muted skin-based tones.</h2>
+        </div>
+        <div class="swatches">
+          <span style="--swatch: #d8d3d8; --swatch-text: #4f4651">FLEX</span>
+          <span style="--swatch: #d4d0d6; --swatch-text: #462c40">PULSE</span>
+          <span style="--swatch: #ded9dd; --swatch-text: #4b4550">DRIFT</span>
+        </div>
+      </section>
+
+      <section class="gift-panel reveal-section" id="gifts">
+        <img src="./assets/collection-packaging.png" alt="" />
+        <div>
+          <p class="sub-kicker">Gift Set</p>
+          <h2>Not a perfume,<br />a second skin.</h2>
+          <p>반투명 패키징과 매트한 공병 질감이 향을 하나의 촉각적 오브제로 완성합니다.</p>
+          <a class="text-link" href="#">View Gift <span></span><b aria-hidden="true">→</b></a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-brand"><img src="./assets/veil-logo.svg" alt="VEIL" /></div>
+      <div class="footer-columns">
+        <div>
+          <h3>About</h3>
+          <a href="./about.html">Brand Philosophy</a>
+          <a href="./about.html">Design Process</a>
+          <a href="./about.html">Sustainability</a>
+        </div>
+        <div>
+          <h3>Fragrance</h3>
+          <a href="./shop.html">Fragrance Design</a>
+          <a href="./shop.html">Ingredients</a>
+          <a href="./index.html#scents">Scents</a>
+        </div>
+        <div>
+          <h3>Shop</h3>
+          <a href="./shop.html">All Products</a>
+          <a href="./shop.html#gifts">Gift Set</a>
+          <a href="./shop.html">Refill</a>
+        </div>
+        <div>
+          <h3>Customer</h3>
+          <a href="#">FAQ</a>
+          <a href="#">Contact</a>
+          <a href="#">Shipping & Returns</a>
+        </div>
+      </div>
+      <div class="social">
+        <a href="#">Instagram <b aria-hidden="true">↗</b></a>
+        <a href="#">Youtube <b aria-hidden="true">▶</b></a>
+      </div>
+      <div class="legal">
+        <span>© 2024 VEIL. All rights reserved.</span>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Use</a>
+      </div>
+      <a class="top-button" href="#" aria-label="Back to top">↑<span>Top</span></a>
+    </footer>
+    <script src="./script.js?v=shop-3scents"></script>
+  </body>
+</html>
