@@ -10,7 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./styles.css?v=shop-3scents" />
+    <link rel="stylesheet" href="./styles.css?v=shop-copy-instagram-last" />
   </head>
   <body class="subpage">
     <header class="site-header subpage-header" aria-label="Primary">
@@ -20,7 +20,7 @@
       <nav class="main-nav" aria-label="Main navigation">
         <a href="./shop.html">Shop</a>
         <a href="./about.html">About</a>
-        <a href="./index.html#fragrance">Fragrance</a>
+        <a href="./index.html#newsletter">Newsletter</a>
         <a href="./shop.html#gifts">Gift</a>
       </nav>
       <nav class="utility-nav" aria-label="Account navigation">
@@ -30,61 +30,104 @@
     </header>
 
     <main>
-      <section class="shop-hero reveal-section">
+      <section class="collection-mood reveal-section">
         <div>
-          <p class="sub-kicker">Body Performance Lifestyle Fragrance</p>
-          <h1>Body states,<br />translated into scent.</h1>
+          <p class="sub-kicker">Movement Collection</p>
+          <h2>States in texture.</h2>
+          <p class="collection-mood-copy">
+            움직임 이전의 긴장,<br />
+            움직임 속의 열기,<br />
+            그리고 이완 이후의 여운.<br /><br />
+            몸이 경험하는 세 가지 감각의 상태를<br />
+            향으로 번역한 VEIL의 첫 번째 컬렉션입니다.
+          </p>
         </div>
-        <p>
-          FLEX, PULSE, DRIFT는 각각 긴장, 열감, 이완의 상태를 향과 소재감으로
-          표현합니다.
-        </p>
+        <div class="mood-gallery">
+          <article>
+            <img src="./assets/shop-mood-flex.png" alt="" />
+            <strong>FLEX</strong>
+            <small>움직이기 직전의 차가운 긴장감</small>
+          </article>
+          <article>
+            <img src="./assets/shop-mood-pulse.png" alt="" />
+            <strong>PULSE</strong>
+            <small>심박이 올라가는 피부의 열감</small>
+          </article>
+          <article>
+            <img src="./assets/shop-mood-drift.png" alt="" />
+            <strong>DRIFT</strong>
+            <small>움직임 후 조용하게 남는 이완</small>
+          </article>
+        </div>
       </section>
 
       <section class="shop-grid reveal-section" aria-label="VEIL fragrance lineup">
         <article class="shop-card flex-card">
           <div class="shop-image"><img src="./assets/flex-detail.png" alt="VEIL Flex fragrance" /></div>
           <div class="shop-meta">
-            <span>01 / Smoky Taupe</span>
-            <h2>Flex</h2>
-            <p>워밍업 직전의 긴장감. 차가운 머스크와 metallic skin.</p>
-            <a class="bag-button" href="#">Add to bag</a>
+            <div class="shop-meta-main">
+              <h2>Flex</h2>
+              <span>178,000원</span>
+            </div>
+            <p>Cold Musk · Metallic Skin · Pepper</p>
           </div>
         </article>
         <article class="shop-card pulse-card">
           <div class="shop-image"><img src="./assets/pulse-detail.png" alt="VEIL Pulse fragrance" /></div>
           <div class="shop-meta">
-            <span>02 / Dusty Rose</span>
-            <h2>Pulse</h2>
-            <p>심박이 올라간 상태. warm skin과 amber의 압력감.</p>
-            <a class="bag-button" href="#">Add to bag</a>
+            <div class="shop-meta-main">
+              <h2>Pulse</h2>
+              <span>178,000원</span>
+            </div>
+            <p>Warm Skin · Amber · Soft Spice</p>
           </div>
         </article>
         <article class="shop-card drift-card">
           <div class="shop-image"><img src="./assets/drift-detail.png" alt="VEIL Drift fragrance" /></div>
           <div class="shop-meta">
-            <span>03 / Fog Lavender Grey</span>
-            <h2>Drift</h2>
-            <p>운동 후 이완 상태. airy cotton과 transparent musk.</p>
-            <a class="bag-button" href="#">Add to bag</a>
+            <div class="shop-meta-main">
+              <h2>Drift</h2>
+              <span>178,000원</span>
+            </div>
+            <p>Airy Cotton · Transparent Musk · Pale Wood</p>
           </div>
         </article>
       </section>
 
-      <section class="color-system reveal-section">
-        <div>
-          <p class="sub-kicker">Color System</p>
-          <h2>Muted skin-based tones.</h2>
+      <section class="scent-timeline reveal-section" aria-label="Scent development timeline">
+        <div class="timeline-points">
+          <article>
+            <strong>0 min</strong>
+            <p>
+              차갑고 선명하게 시작됩니다.<br />
+              금속적인 공기감이 피부를 스칩니다.
+            </p>
+          </article>
+          <article>
+            <strong>30 min</strong>
+            <p>
+              피부 온도와 함께<br />
+              부드럽게 스며듭니다.
+            </p>
+          </article>
+          <article>
+            <strong>2 hr</strong>
+            <p>
+              긴장이 풀리며<br />
+              잔향만이 남습니다.
+            </p>
+          </article>
         </div>
-        <div class="swatches">
-          <span style="--swatch: #d8d3d8; --swatch-text: #4f4651">FLEX</span>
-          <span style="--swatch: #d4d0d6; --swatch-text: #462c40">PULSE</span>
-          <span style="--swatch: #ded9dd; --swatch-text: #4b4550">DRIFT</span>
+        <div class="timeline-line" aria-hidden="true">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
+        <p class="timeline-note">개인에 따라 차이가 있을 수 있습니다.</p>
       </section>
 
       <section class="gift-panel reveal-section" id="gifts">
-        <img src="./assets/collection-packaging.png" alt="" />
+        <img src="./assets/shop-gift.png" alt="" />
         <div>
           <p class="sub-kicker">Gift Set</p>
           <h2>Not a perfume,<br />a second skin.</h2>
@@ -133,6 +176,6 @@
       </div>
       <a class="top-button" href="#" aria-label="Back to top">↑<span>Top</span></a>
     </footer>
-    <script src="./script.js?v=shop-3scents"></script>
+    <script src="./script.js?v=shop-copy-instagram-last"></script>
   </body>
 </html>
