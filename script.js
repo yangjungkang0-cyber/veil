@@ -17,6 +17,24 @@ const revealObserver = new IntersectionObserver(
 
 revealTargets.forEach((target) => revealObserver.observe(target));
 
+const flowSteps = document.querySelectorAll(".flow-step");
+
+if (flowSteps.length) {
+  const flowObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        entry.target.classList.toggle("is-visible", entry.isIntersecting);
+      });
+    },
+    {
+      rootMargin: "0px 0px -18% 0px",
+      threshold: 0.22,
+    },
+  );
+
+  flowSteps.forEach((step) => flowObserver.observe(step));
+}
+
 const productTrack = document.querySelector(".product-track");
 const productSlides = [...document.querySelectorAll(".product-slide")];
 const prevProduct = document.querySelector("[data-product-prev]");
